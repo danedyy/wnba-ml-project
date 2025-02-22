@@ -1,0 +1,2 @@
+TeamModel,CoachModel,SquadModel,PlayoffModel,AccuracyScore,ManualAccuracy
+RandomForest,NeuralNetwork,NeuralNetwork,Ensemble,69.23076923076923,69.23076923076923

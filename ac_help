@@ -1,0 +1,34 @@
+# def autopct_format(values):
+#     def my_format(pct):
+#         total = sum(values)
+#         val = int(round(pct * total / 100.0))
+#         return f'{pct:.1f}% ({val:d})'
+#     return my_format
+
+# # Create the pie chart
+# plt.figure(figsize=(10, 6))
+# values = csv_teams['playoff'].value_counts()
+# values.plot.pie(autopct=autopct_format(values), startangle=90, shadow=True)
+# plt.title('Playoff appearances')
+# plt.ylabel('')
+# plt.show()
+
+# # Prepare data for the grouped bar plot
+# team_playoff_counts = csv_teams[csv_teams['playoff'] == 'Y']['tmID'].value_counts()
+# team_non_playoff_counts = csv_teams[csv_teams['playoff'] == 'N']['tmID'].value_counts()
+
+# # Combine the counts into a single DataFrame
+# combined_counts = pd.DataFrame({
+#     'Playoff': team_playoff_counts,
+#     'Non-Playoff': team_non_playoff_counts
+# }).fillna(0)
+
+# # Create the grouped bar plot
+# plt.figure(figsize=(14, 8))
+# combined_counts.plot(kind='bar', edgecolor='k', alpha=0.7)
+# plt.title('Number of Playoff and Non-Playoff Appearances by Team')
+# plt.xlabel('Team')
+# plt.ylabel('Number of Appearances')
+# plt.xticks(rotation=45)
+# plt.grid(True)
+# plt.show()
