@@ -41,7 +41,7 @@ The goal of this project is to use 10 seasons of WNBA teams' records to predict 
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/danedyy/wnba-ml-project.git
     ```
 
 2. Install the required dependencies:
